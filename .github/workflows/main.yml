@@ -20,7 +20,7 @@ defaults:
 
 env:
 
-  ROM_URL: https://bigota.d.miui.com/V14.0.2.0.TKUCNXM/miui_SELENE_V14.0.2.0.TKUCNXM_f349844cfd_13.0.zip
+  ROM_URL: https://mega-drive-0.megamirror69.workers.dev/1:/LAVA_LXX503_SW_V07_HW_V1.0_20221126%28MobiFirmware.com%29.zip
 
   
 
@@ -44,7 +44,7 @@ jobs:
 
               git clone https://github.com/fw-dumps/DumprX dumper
 
-              sudo apt install python3-pip -y
+
 
        - name: Setup Dumpyara environment
 
