@@ -1,9 +1,12 @@
 name: Dumping fw
 
- 
-
 on:
-
+  workflow_dispatch:
+    inputs:
+      ROM_URL:
+        description: "Direct Link of the ROM/Firmware to Dump"
+        required: true
+        
   push:
 
     paths-ignore:
@@ -20,8 +23,7 @@ defaults:
 
 env:
 
-  ROM_URL: https://bigota.d.miui.com/V14.0.7.0.TLUMIXM/rock_global_images_V14.0.7.0.TLUMIXM_20230508.0000.00_13.0_global_a508bc807e.tgz
-
+  ROM_URL: ${{ github.event.inputs.ROM_URL }}
   
 
 jobs:
